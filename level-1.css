@@ -1,0 +1,246 @@
+@font-face{
+  font-family: Outfit; 
+  src: url(Outfit-VariableFont_wght.ttf);
+}
+
+@font-face{
+  font-family: Roboto;
+  src: url(Roboto-Medium.ttf);
+}
+
+*{
+  font-family: Outfit;
+}
+
+.gradient-icon,
+.level-1-child {
+  position: absolute;
+  top: 429px;
+  left: 460px;
+  width: 931px;
+  height: 1429px;
+}
+.level-1-child {
+  top: 1946px;
+  left: 663px;
+  border-radius: 50%;
+  background-color: var(--color-lightblue-100);
+  filter: blur(304px);
+  width: 861px;
+  height: 821px;
+}
+.text {
+  position: absolute;
+  top: 761px;
+  left: 736px;
+  font-size: 18px;
+}
+.level-1-inner,
+.level-1-item {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(304px);
+  width: 861px;
+  height: 821px;
+}
+.level-1-item {
+  top: 1693px;
+  left: -315px;
+  background-color: var(--color-lightblue-100);
+}
+.level-1-inner {
+  top: -60px;
+  left: -545px;
+  background-color: rgba(198, 231, 248, 0.54);
+}
+.level-11 {
+  position: absolute;
+  top: 126px;
+  left: 425px;
+  font-size: 120px;
+  display: inline-block;
+  color: var(--color-white);
+  width: 665px;
+  height: 143px;
+}
+.answer-the-following,
+.watch-the-video {
+  position: absolute;
+  top: 378px;
+  left: 116px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  display: inline-block;
+  width: 787px;
+  height: 85px;
+}
+.answer-the-following {
+  top: 1196px;
+  left: 153px;
+  text-align: left;
+  width: 957px;
+}
+.points-child {
+  position: absolute;
+  top: 0;
+  left: 108px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-white);
+  width: 210px;
+  height: 57px;
+}
+.y-6di5usrkc5p2qc1k-removebg-pr-icon {
+  position: absolute;
+  top: 0;
+  left: 117px;
+  width: 57px;
+  height: 57px;
+  object-fit: cover;
+}
+.div {
+  position: absolute;
+  top: 9px;
+  left: 146px;
+  font-weight: 500;
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 169px;
+  height: 23px;
+}
+.points,
+.points-item {
+  position: absolute;
+  height: 57px;
+}
+.points {
+  top: 29px;
+  left: 887px;
+  width: 318px;
+  text-align: right;
+  color: var(--color-white);
+}
+.points-item {
+  top: 0;
+  left: 81px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-white);
+  width: 210px;
+}
+.bronze,
+.tier {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  font-weight: 500;
+}
+.bronze {
+  left: 119px;
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 169px;
+}
+.points2 {
+  position: absolute;
+  top: 29px;
+  left: 190px;
+  width: 291px;
+  height: 57px;
+  text-align: right;
+  color: var(--color-white);
+}
+.next-button-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 70px;
+  background: linear-gradient(180deg, #a4ff5d, #05ff00);
+  width: 206px;
+  height: 65px;
+}
+.next {
+  position: absolute;
+  top: 21px;
+  left: 27px;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  width: 152.87px;
+  height: 24px;
+}
+.next-button,
+.next-button-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 206px;
+  height: 65px;
+}
+.next-button-wrapper {
+  top: 2150px;
+  left: 854px;
+  cursor: pointer;
+  font-size: 40px;
+  color: var(--color-white);
+}
+.q1-rahul-is,
+.q2-what-special {
+  position: absolute;
+  top: 1281px;
+  left: 157px;
+  font-weight: 500;
+  text-align: left;
+  display: inline-block;
+  width: 910px;
+  height: 55px;
+}
+.q2-what-special {
+  top: 1529px;
+  left: 150px;
+}
+.to-do {
+  position: relative;
+  width: 513px;
+  height: 84px;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-black);
+  width: 1113px;
+  height: 624px;
+}
+.pngwing-1-icon {
+  position: absolute;
+  top: 192px;
+  left: 448px;
+  width: 218px;
+  height: 211px;
+  object-fit: cover;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 463px;
+  left: 134px;
+  width: 1113px;
+  height: 624px;
+}
+.level-1,
+.q2-options {
+  position: relative;
+  width: 513px;
+  height: 372px;
+}
+.level-1 {
+  background-color: #0abbc6;
+  width: 100%;
+  height: 2269px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+  font-family: var(--font-outfit);
+}
