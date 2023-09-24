@@ -1,6 +1,6 @@
-# Know Your Car
+# Chanakya
 
-![web_img](Images/Screenshot 2023-09-23 173132.png)
+![home page](Images/Screenshot 2023-09-23 173132.png)
 
 ## Description:
 
