@@ -74,6 +74,7 @@ nav a{
     gap: 15px;
     justify-content: center;
     font-family: Outfit;
+    z-index: 2;
 }
 
 .grid img{
@@ -95,6 +96,7 @@ nav a{
 
 .buttons {
     grid-row-start: 3;
+    z-index: 100;
 }
 
 .grid p{
@@ -111,7 +113,6 @@ nav a{
     font-family: Outfit;
     font-size: 50px;
     width: 300px;
-    z-index: 2;
 }
 
 #Login{
@@ -120,6 +121,7 @@ nav a{
     border-radius: 83px;
     height: 45px;
     width: 133px;
+    z-index: 10;
 }
 
 #Register{
@@ -129,7 +131,7 @@ nav a{
     height: 45px;
     width: 133px;
     margin-right: 35px;
-    z-index: 2;
+    z-index: 100;
 }
 
 .buttons button{
@@ -137,6 +139,7 @@ nav a{
     font-size: 16px;
     word-spacing: 10%;
     font-family: Outfit;
+    z-index: 100;
 }
 
 
