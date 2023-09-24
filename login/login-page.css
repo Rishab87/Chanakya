@@ -190,7 +190,7 @@
   position: absolute;
   top: 1086px;
   left: 0;
-  width: 1440px;
+  width: 100vw;
   height: 274px;
   text-align: left;
   font-size: var(--sub-heading-size);
