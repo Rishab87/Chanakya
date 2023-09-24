@@ -16,57 +16,105 @@
     />
   </head>
   <body>
-    <div class="level-22">
-
-      <div class="level-2-child"></div>
-      <b class="text5"> </b>
-      <div class="level-2-item"></div>
-      <div class="level-2-inner"></div>
-      <b class="level-23">LEVEL 2</b>
-      <div class="points3">
-        <div class="points-inner"></div>
-        <img
-          class="y-6di5usrkc5p2qc1k-removebg-pr-icon1"
-          alt=""
-          src="../Images/star.png"
-        />
-
-        <div class="points4">Points:</div>
-        <div class="div7">0/20</div>
-      </div>
-      <div class="points5">
-        <div class="points-child1"></div>
-        <div class="points4">Tier:</div>
-        <div class="bronze1">Bronze</div>
-      </div>
-      <div class="rectangle-parent8" id="groupContainer1">
-        <div class="group-child8"></div>
-        <div class="next1">Next</div>
-        <div class="next-button-container">
-          <div class="next-button1">
-            <div class="next-button-item"></div>
-            <div class="next2">Next</div>
-          </div>
-        </div>
-      </div>
-      <div class="watch-the-video1">
+    <div class="level-1">
+      <!-- <img class="gradient-icon" alt="" src="./public/gradient.svg" /> -->
+      <div class="level-1-child"></div>
+      <b class="text"> </b>
+      <div class="level-1-item"></div>
+      <div class="level-1-inner"></div>
+      <b class="level-11">LEVEL 2</b>
+      <div class="watch-the-video">
         Watch the video and answer the following questions.
       </div>
-      <div class="answer-the-following1">Answer The Following Questions:</div>
-      <div class="rectangle-parent9">
-        <div class="group-child9"></div>
-        <img class="pngwing-1-icon1" alt="" src="../Images/yt.png" />
+      <div class="answer-the-following">Answer The Following Questions:</div>
+      <div class="points">
+        <div class="points-child"></div>
+        <img
+          class="y-6di5usrkc5p2qc1k-removebg-pr-icon"
+          alt=""
+          src="../Images/star.png"
+        >
+        <div class="tier">Points:</div>
+        <div class="div">0/20</div>
       </div>
-      <div class="ellipse-div"></div>
+      <div class="points2">
+        <div class="points-item"></div>
+        <div class="tier">Tier:</div>
+        <div class="bronze">Bronze</div>
+      </div>
+      <div class="next-button-wrapper" id="groupContainer">
+        <div class="next-button">
+          <div class="next-button-child"></div>
+          <div class="next">Next</div>
+        </div>
+      </div>
+      <div class="q1-rahul-is">
+        Q1. Imagine a new student joining your class. They have a different accent and come from a country you've never been to. Some kids in your class start making fun of the way they talk and the clothes they wear. Is it fair for them to be treated that way?
+        <form id="q1">
+          <input type="radio" id="no" name="q1_answer" value="0">
+          <label for="yes">YES</label><br>
+          <input type="radio" id="yes" name="q1_answer" value="1">
+          <label for="no">NO</label><br>
+        </form>
+      </div>
+      <div class="q2-what-special">
+        Q2. How would you make him/her included in the class?
+        <form id="q2">
+          <input type="radio" id="no" name="q2_answer" value="0">
+          <label for="education">Ignoring</label><br>
+          <input type="radio" id="no" name="q2_answer" value="0">
+          <label for="games">Make fun of the new student</label><br>
+          <input type="radio" id="yes" name="q2_answer" value="1">
+          <label for="games">Become a friend of  the new student</label><br>
+          <input type="radio" id="no" name="q2_answer" value="0">
+          <label for="games">None</label><br>
+        </form>
+      </div>
+      
+      <div class="to-do"></div>
+      <div class="to-do"></div>
+      <div class="rectangle-parent">
+        <iframe src="https://www.youtube.com/embed/lbn9gms4jqM" controls></iframe>
+      </div>
+      <div class="q2-options">
+        <div class="to-do"></div>
+        <div class="to-do"></div>
+        <div class="to-do"></div>
+        <div class="to-do"></div>
+      </div>
     </div>
 
     <script>
-      var groupContainer1 = document.getElementById("groupContainer1");
-      if(groupContainer1) {
-        groupContainer1.addEventListener("click", function (e) {
-          window.location.href = "../start/start_page3.html"
-        });
-      }
+      var q1Form = document.getElementById("q1");
+      var q2Form = document.getElementById("q2");
+      var nextButton = document.querySelector(".next-button");
+
+      var points = 0;
+
+      nextButton.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        var q1Answer = q1Form.querySelector("input[name='q1_answer']:checked");
+        var q2Answer = q2Form.querySelector("input[name='q2_answer']:checked");
+
+        if (q1Answer && q2Answer) {
+          points = parseInt(q1Answer.value) + parseInt(q2Answer.value);
+
+          if (points == 2) {
+            alert("Correct! Move to the next page.");
+            window.location.href = "../start/start_page6.html";
+            // Uncomment the following line to navigate to the next page
+            // window.location.href = "../start/start_page3.html";
+          } else {
+            alert("One or more answers are incorrect!");
+            console.log(points);
+          }
+        } else {
+          alert("Please answer both questions.");
+          console.log(points);
+        }
+      });
     </script>
   </body>
 </html>
+
