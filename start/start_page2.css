@@ -1,3 +1,10 @@
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
 @font-face{
   font-family: Outfit; 
   src: url(../Outfit-VariableFont_wght.ttf);
@@ -8,9 +15,7 @@
   src: url(../Roboto-Medium.ttf)
 }
 
-*{
-  border: none;
-}
+
 
 body{
   height: 1500px;
@@ -23,7 +28,7 @@ body{
     display: flex;
     background-color: white;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     left: 0px;
     top: 1700px;

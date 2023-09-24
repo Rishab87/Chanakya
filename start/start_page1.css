@@ -23,7 +23,7 @@ body{
     display: flex;
     background-color: white;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     left: 0px;
     top: 1500px;
