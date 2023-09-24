@@ -43,31 +43,31 @@
         <div class="tier">Tier:</div>
         <div class="bronze">Bronze</div>
       </div>
-      <a href="../start/start_page2.html" style="text-decoration: none;"><div class="next-button-wrapper" id="groupContainer">
+      <div class="next-button-wrapper" id="groupContainer">
         <div class="next-button">
           <div class="next-button-child"></div>
           <div class="next">Next</div>
         </div>
-      </div></a>
+      </div>
       <div class="q1-rahul-is">
-        Q1. Rahul is 6 years old. Is he considered child by our government?
-        <form>
-          <input type="radio" id="yes" name="fav_language" value="YES">
+        Q1. Rahul is 6 years old. Is he considered a child by our government?
+        <form id="q1">
+          <input type="radio" id="yes" name="q1_answer" value="1">
           <label for="yes">YES</label><br>
-          <input type="radio" id="no" name="fav_language" value="NO">
+          <input type="radio" id="no" name="q1_answer" value="0">
           <label for="no">NO</label><br>
         </form>
       </div>
       <div class="q2-what-special">
-        Q2. What special privilliges do you think are available to the kid?
-        <form>
-          <input type="radio" id="yes" name="fav_language" value="YES">
+        Q2. What special privileges do you think are available to the kid?
+        <form id="q2">
+          <input type="radio" id="yes" name="q2_answer" value="1">
           <label for="education">Right to get Education</label><br>
-          <input type="radio" id="no" name="fav_language" value="NO">
+          <input type="radio" id="no" name="q2_answer" value="0">
           <label for="games">Right to play games</label><br>
-          <input type="radio" id="no" name="fav_language" value="NO">
-          <label for="games">Right never be accused of a Crime</label><br>
-          <input type="radio" id="no" name="fav_language" value="NO">
+          <input type="radio" id="no" name="q2_answer" value="0">
+          <label for="games">Right never to be accused of a Crime</label><br>
+          <input type="radio" id="no" name="q2_answer" value="0">
           <label for="games">All the above</label><br>
         </form>
       </div>
@@ -75,8 +75,7 @@
       <div class="to-do"></div>
       <div class="to-do"></div>
       <div class="rectangle-parent">
-        <div class="group-child"></div>
-        <img class="pngwing-1-icon" alt="" src="../Images/yt.png" />
+        <iframe src="https://www.youtube.com/embed/jUxT9KdYbs8" controls></iframe>
       </div>
       <div class="q2-options">
         <div class="to-do"></div>
@@ -88,11 +87,20 @@
 
     <script>
       var groupContainer = document.getElementById("groupContainer");
-      if (groupContainer) {
-        groupContainer.addEventListener("click", function (e) {
-          window.location.href = "../start/start-page1.html"
-        });
-      }
-      </script>
+      groupContainer.addEventListener('click', function () {
+        const q1Answer = document.querySelector('input[name="q1_answer"]:checked');
+        const q2Answer = document.querySelector('input[name="q2_answer"]:checked');
+        if (q1Answer && q2Answer) {
+          if (q1Answer.value == 1 && q2Answer.value == 1) {
+            alert("Correct! Move to the next page.");
+            window.location.href = "../start/start_page2.html";
+          } else {
+            alert('One or more answers are incorrect.');
+          }
+        } else {
+          alert('Please answer both questions before checking.');
+        }
+      });
+    </script>
   </body>
 </html>
