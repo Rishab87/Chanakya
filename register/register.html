@@ -24,17 +24,18 @@
 
             <div class="type">
                 <div class="inputs">
-                    <label for="first" class="label">First Name:&nbsp</label>
-                    <input type="text" id="first" class="input" placeholder="Enter First Name">
+                    <form id="registration-form">
+                    <label for="first" class="label">First Name<sup style="color: red;">*</sup>:&nbsp&nbsp</label>
+                    <input type="text" id="first" class="input" placeholder="Enter First Name" required>
                 </div>
 
                 <div class="inputs">
-                    <label for="last" class="label">Last Name:&nbsp</label>
+                    <label for="last" class="label">Last Name:&nbsp&nbsp&nbsp&nbsp</label>
                     <input type="text" id="last" class="input" placeholder="Enter Last Name">
                 </div>
 
                 <div class="inputs">
-                    <label for="gender" class="label" >Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <label for="gender" class="label" >Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
                     <select name="" id="gender">
                         <option value="" selected disabled>--Select Gender--</option>
                         <option value="Male">Male</option>
@@ -44,36 +45,37 @@
                 </div>
 
                 <div class="inputs">
-                    <label for="email" class="label" >Email Id:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-                    <input type="email" id="email" class="input" placeholder="Enter Email ID">
+                    <label for="email" class="label">Email Id<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="email" id="email" class="input" placeholder="Enter Email ID" required>
                 </div>
 
                 <div class="inputs">
-                    <label for="mobile" class="label">Mobile No:&nbsp&nbsp&nbsp</label>
-                    <input type="tel" id="mobile" class="input" placeholder="Enter Mobile No.">
+                    <label for="mobile" class="label">Mobile No<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="tel" id="mobile" class="input" placeholder="Enter Mobile No." required>
                 </div>
 
                 <div class="inputs">
-                    <label for="user" class="label">Username:&nbsp&nbsp&nbsp</label>
-                    <input type="text" id="user " class="input" placeholder="Enter Username">
+                    <label for="user" class="label">Username<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="text" id="user " class="input" placeholder="Enter Username" required>
                 </div>
 
                 <div class="inputs">
-                    <label for="pass" class="label">Password:&nbsp&nbsp&nbsp&nbsp</label>
-                    <input type="password" id="pass" class="input" placeholder="Enter password">
+                    <label for="pass" class="label">Password<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="password" id="pass" class="input" placeholder="Enter password" required>
                 </div>
 
                 <div class="inputs">
-                    <label for="confirm" class="label">Confirm:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-                    <input type="password" id="confirm" class="input" placeholder="Re-enter passowrd">
+                    <label for="confirm" class="label">Confirm<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <input type="password" id="confirm" class="input" placeholder="Re-enter passowrd" required>
                 </div>
             </div>
 
             <div class="buttons">
-                <button value="Register" id="Register">REGISTER</button>
-                <a href="#">Already a member?</a>
+                <button value="Register" id="Register" type="submit">REGISTER</button>
+                <a href="../login/login-page.html">Already a member?</a>
             </div>
         </div>
+    </form>
 
         <footer>
             <div class="foot_content">
@@ -127,5 +129,25 @@
         </footer>
 
     </div>
-</body>
+    <script>
+        var ans1 = 0;
+        var regForm = document.getElementById("registration-form");
+
+        regForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var first = document.getElementById("first");
+            var email = document.getElementById("email");
+            var mobile = document.getElementById("mobile");
+            var user = document.getElementById("user");
+            var pass = document.getElementById("pass");
+            var confirm = document.getElementById("confirm");
+
+                if (pass.value == confirm.value) {
+                    window.location.href = "../start/start_page1.html";
+                } else {
+                    alert('Password and Confirm Password are not the same');
+                }
+        });
+    </script>
 </html>

@@ -63,6 +63,8 @@
 
 .type{
     margin-top: 8%;
+    position: relative;
+    right: 300px;
 }
 
 .inputs {
@@ -76,13 +78,14 @@
     border-radius: 25px;
     border: 1px solid white;
     height: 35px;
+    width: 600px;
 }
 
 .inputs select{
     border-radius: 25px;
     border: 1px solid white;
-    height: 35px;
-    width: 164px;   
+    height: 35px;  
+    width: 600px; 
 }
 
 .inputs .label{
