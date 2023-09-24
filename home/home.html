@@ -26,11 +26,12 @@
         <div class="wrapper">
             <header>
                 <nav>
-                    <a href="#"> <h1>HOME</h1> </a>
+                    <a href="home.html"><h1>HOME</h1></a>
         
                     <div class="nav_elements">
                         <a href="#"><h1>About</h1></a>
                         <a href="#"><h1>Start Learning</h1></a>
+                        <a href="../redeem/redeem.html"><h1>Merchandise</h1></a>
                         <a href="#"><h1>Official Legal Documents</h1></a>
                         <a href="#"><h1>Contact Us</h1></a>
                         
@@ -192,6 +193,18 @@
             </footer>
             
     </div>
+<script>
+        const reg = document.getElementById("Register");
+        const login = document.getElementById("Login");
+
+        reg.addEventListener('click', function () {
+            window.location.href = "../register/register.html";
+        });
+
+        login.addEventListener("click", function () {
+            window.location.href = "../login/login-page.html";
+        });
+    </script>
 
     
 </body>
