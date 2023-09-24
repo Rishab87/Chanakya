@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: Outfit;
-    src: url(Outfit-VariableFont_wght.ttf);
+    src: url(../Outfit-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: Roboto;
-    src: url(Roboto-Medium.ttf);
+    src: url(../Roboto-Medium.ttf);
 }
 
 
