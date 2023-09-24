@@ -412,24 +412,33 @@ nav a{
     width: 30px;
 }
 
-.foot_content h2{
+.foot_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-content .section {
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+}
+
+.footer-content h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
     font-weight: bold;
-    font-size: 16px;
-    word-spacing: 10%;
-    font-family: Outfit;
+    margin-bottom: 10px;
 }
 
-.foot_content a{
+.footer-content a {
     text-decoration: none;
-    color: black;
-    font-family: Roboto;
-    font-size: 16px;
-}
-
-.foot_content p{
-    color: black;
-    font-family: Roboto;
-    font-size: 16px;
+    color: #0ABBC6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    display: block;
+    margin: 5px 0;
 }
 
 .Rights a{
