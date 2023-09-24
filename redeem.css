@@ -1,0 +1,363 @@
+.redeem-child,
+.redeem-inner,
+.redeem-item {
+  position: absolute;
+  top: 872px;
+  left: 920px;
+  border-radius: 50%;
+  background-color: var(--color-lightblue-300);
+  filter: blur(304px);
+  width: 861px;
+  height: 821px;
+}
+.redeem-inner,
+.redeem-item {
+  top: 2130px;
+  left: -201px;
+  background-color: var(--color-lightblue-400);
+}
+.redeem-inner {
+  top: -145px;
+  left: -536px;
+  background-color: var(--color-lightblue-500);
+}
+.free-goodies-for,
+.redeem-your-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 100px;
+  display: inline-block;
+  width: 869px;
+  height: 106px;
+}
+.free-goodies-for {
+  top: 106px;
+  left: 245px;
+  font-size: var(--font-size-21xl);
+  line-height: 20px;
+  font-weight: 500;
+  width: 735px;
+  height: 47px;
+}
+.blowing-rocket-3d-cartoon-styl-icon {
+  position: absolute;
+  top: 762px;
+  left: 947px;
+  width: 457px;
+  height: 432px;
+  object-fit: cover;
+}
+.upper-head {
+  position: absolute;
+  top: 89px;
+  left: 54px;
+  width: 1404px;
+  height: 1194px;
+  text-align: left;
+  font-size: var(--font-size-51xl);
+}
+.footer-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 274px;
+}
+.chanakya,
+.email,
+.menu,
+.our-socials,
+.services {
+  position: absolute;
+  top: 21px;
+  left: 184px;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.email,
+.menu,
+.our-socials,
+.services {
+  top: 24px;
+  left: 472px;
+}
+.menu,
+.our-socials,
+.services {
+  left: 678px;
+}
+.our-socials,
+.services {
+  left: 871px;
+}
+.our-socials {
+  left: 1105px;
+}
+.all-rights-reserved {
+  margin: 0;
+}
+.all-rights-reserved-container {
+  position: absolute;
+  top: 76px;
+  left: 184px;
+  line-height: 20px;
+  font-family: var(--body-text);
+  color: var(--color-black);
+  width: 176px;
+  height: 61px;
+}
+.about-us-courses-container,
+.all-rights-reserved-container,
+.terms-of-use-container {
+  font-size: var(--body-text-size);
+  font-weight: 500;
+  display: inline-block;
+}
+.about-us-courses-container {
+  position: absolute;
+  top: 76px;
+  left: 678px;
+  line-height: 20px;
+  font-family: var(--body-text);
+  color: var(--color-black);
+  width: 99px;
+  height: 102px;
+}
+.terms-of-use-container {
+  top: 81px;
+  left: 871px;
+  width: 189px;
+  height: 81px;
+}
+.privacy-policy,
+.terms-of-use-container,
+.xyzgmailcom {
+  position: absolute;
+  line-height: 20px;
+  font-family: var(--body-text);
+  color: var(--color-black);
+}
+.xyzgmailcom {
+  top: 76px;
+  left: 454px;
+  font-size: var(--body-text-size);
+  font-weight: 500;
+}
+.privacy-policy {
+  top: 178px;
+  left: 184px;
+  text-decoration: underline;
+  font-weight: 600;
+  display: inline-block;
+  width: 176px;
+  height: 61px;
+}
+.frame-icon,
+.vector-icon,
+.vector-icon1 {
+  position: absolute;
+  top: 50px;
+  left: 1105px;
+  width: 40px;
+  height: 41px;
+  overflow: hidden;
+}
+.vector-icon,
+.vector-icon1 {
+  height: 9.72%;
+  width: 2.99%;
+  top: 22.37%;
+  right: 16.32%;
+  bottom: 67.91%;
+  left: 80.69%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon1 {
+  height: 11.14%;
+  width: 3.47%;
+  top: 21.9%;
+  right: 11.94%;
+  bottom: 66.96%;
+  left: 84.58%;
+}
+.footer {
+  position: absolute;
+  top: 1287px;
+  left: 0;
+  width: 1440px;
+  height: 274px;
+  text-align: left;
+  color: var(--color-gray);
+}
+.redeem-now {
+  position: relative;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  width: 248px;
+  flex-shrink: 0;
+}
+.redeem-now-wrapper {
+  position: absolute;
+  top: 140.23px;
+  left: 484.95px;
+  border-radius: var(--br-64xl);
+  background-color: var(--color-lightblue-200);
+  width: 228.59px;
+  height: 62.44px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mid) var(--padding-17xl);
+  box-sizing: border-box;
+}
+.untitled-design-1-removebg-p-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 321.52px;
+  height: 342.9px;
+  object-fit: cover;
+}
+.redeem-now-container,
+.start-button {
+  position: absolute;
+  top: 366px;
+  left: 91.46px;
+  width: 713.54px;
+  height: 342.9px;
+  text-align: center;
+  color: var(--color-black);
+}
+.redeem-now-container {
+  top: 912px;
+  left: 586px;
+  border-radius: var(--br-64xl);
+  background-color: var(--color-lightblue-200);
+  width: 228.59px;
+  height: 62.44px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mid) var(--padding-17xl);
+  box-sizing: border-box;
+}
+.points-child1 {
+  position: absolute;
+  top: 0;
+  left: 96px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-white);
+  width: 210px;
+  height: 57px;
+}
+.y-6di5usrkc5p2qc1k-removebg-pr-icon2 {
+  position: absolute;
+  top: 0;
+  left: 105px;
+  width: 57px;
+  height: 57px;
+  object-fit: cover;
+}
+.stars {
+  top: 9px;
+  left: 0;
+  font-weight: 500;
+}
+.div2,
+.points6,
+.stars {
+  position: absolute;
+}
+.div2 {
+  top: 9px;
+  left: 134px;
+  font-weight: 500;
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 169px;
+  height: 23px;
+}
+.points6 {
+  top: 32px;
+  left: 1110px;
+  width: 306px;
+  height: 57px;
+  font-size: var(--font-size-11xl);
+}
+.points-child2 {
+  position: absolute;
+  top: 0;
+  left: 207.73px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-white);
+  width: 193.1px;
+  height: 50.12px;
+}
+.y-6di5usrkc5p2qc1k-removebg-pr-icon3 {
+  position: absolute;
+  top: 0;
+  left: 216px;
+  width: 52.41px;
+  height: 50.12px;
+  object-fit: cover;
+}
+.div3,
+.star-required {
+  position: absolute;
+  top: 7.91px;
+  left: 0;
+  font-weight: 500;
+  display: inline-block;
+  width: 192.18px;
+  height: 33.41px;
+}
+.div3 {
+  left: 242.67px;
+  color: var(--color-black);
+  text-align: center;
+  width: 155.4px;
+  height: 20.22px;
+}
+.points7,
+.points8 {
+  position: absolute;
+  top: 717.88px;
+  left: 107px;
+  width: 400.83px;
+  height: 50.12px;
+  font-size: var(--font-size-11xl);
+}
+.points8 {
+  top: 1098px;
+  left: 108px;
+}
+.pngtree-cup-ceramic-cup-coffee-icon {
+  position: absolute;
+  top: 763px;
+  left: 93px;
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+}
+.redeem1 {
+  position: relative;
+  background-color: var(--color-darkturquoise);
+  width: 100%;
+  height: 1561px;
+  overflow: hidden;
+  text-align: right;
+  font-size: var(--sub-heading-size);
+  color: var(--color-white);
+  font-family: var(--sub-heading);
+}
