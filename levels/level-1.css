@@ -12,6 +12,21 @@
   font-family: Outfit;
 }
 
+.rectangle-parent iframe{
+  margin-top: 5%;
+  width: 70%;
+  height: 80%;
+  border: 1px solid  #0abbc6;
+  border-radius: 20px;
+}
+
+form{
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-left: 7%;
+}
+
 .gradient-icon,
 .level-1-child {
   position: absolute;
@@ -21,7 +36,7 @@
   height: 1429px;
 }
 .level-1-child {
-  top: 1946px;
+  top: 180%;
   left: 663px;
   border-radius: 50%;
   background-color: var(--color-lightblue-100);
@@ -44,7 +59,7 @@
   height: 821px;
 }
 .level-1-item {
-  top: 1693px;
+  top: 180%;
   left: -315px;
   background-color: var(--color-lightblue-100);
 }
@@ -174,16 +189,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 206px;
-  height: 65px;
+  width: 40%;
+  height: 20%;
 }
 .next-button-wrapper {
-  top: 2150px;
-  left: 854px;
+  top: 270%;
+  left: 60%;
   cursor: pointer;
   font-size: 40px;
   color: var(--color-white);
 }
+
 .q1-rahul-is,
 .q2-what-special {
   position: absolute;
@@ -227,6 +243,22 @@
   left: 134px;
   width: 1113px;
   height: 624px;
+}
+.level-1,
+.q2-options {
+  position: relative;
+  width: 513px;
+  height: 372px;
+}
+.level-1 {
+  background-color: #0abbc6;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+  font-family: var(--font-outfit);
 }
 .level-1,
 .q2-options {
