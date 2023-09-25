@@ -12,6 +12,11 @@
   font-family: Outfit;
 }
 
+body{
+  margin:0;
+  padding:0;
+}
+
 .rectangle-parent iframe{
   margin-top: 5%;
   width: 70%;
