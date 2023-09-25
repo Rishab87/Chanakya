@@ -1,7 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 .gradient-icon2 {
   position: absolute;
   top: 0;
@@ -9,12 +10,14 @@
   width: 1876px;
   height: 1536px;
 }
+
 .text2 {
   position: absolute;
   top: 761px;
   left: 736px;
   font-size: var(--font-size-lg);
 }
+
 .hero-child {
   position: absolute;
   top: 408px;
@@ -23,6 +26,7 @@
   height: 100px;
   overflow: hidden;
 }
+
 .already-a-member1,
 .log-in-to {
   position: absolute;
@@ -33,6 +37,7 @@
   width: 531px;
   height: 291px;
 }
+
 .log-in-to {
   top: 246px;
   font-size: var(--font-size-11xl);
@@ -41,6 +46,7 @@
   width: 473px;
   height: 112px;
 }
+
 .rectangle-icon3 {
   position: absolute;
   top: 0;
@@ -50,6 +56,7 @@
   height: 492px;
   object-fit: cover;
 }
+
 .hero {
   position: absolute;
   top: 120px;
@@ -60,6 +67,7 @@
   font-size: var(--font-size-51xl);
   color: var(--color-white);
 }
+
 .footer-inner {
   position: absolute;
   top: 0;
@@ -68,6 +76,7 @@
   width: 100vw;
   height: 274px;
 }
+
 .vector-icon4 {
   position: absolute;
   height: 14.96%;
@@ -80,6 +89,7 @@
   overflow: hidden;
   max-height: 100%;
 }
+
 .chanakya2,
 .email2,
 .menu2,
@@ -93,6 +103,7 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+
 .email2,
 .menu2,
 .our-socials2,
@@ -100,21 +111,26 @@
   top: 24px;
   left: 472px;
 }
+
 .menu2,
 .our-socials2,
 .services2 {
   left: 678px;
 }
+
 .our-socials2,
 .services2 {
   left: 871px;
 }
+
 .our-socials2 {
   left: 1105px;
 }
+
 .all-rights-reserved2 {
   margin: 0;
 }
+
 .all-rights-reserved-container2 {
   position: absolute;
   top: 76px;
@@ -125,6 +141,7 @@
   width: 176px;
   height: 61px;
 }
+
 .about-us-courses-container2,
 .all-rights-reserved-container2,
 .terms-of-use-container2 {
@@ -132,6 +149,7 @@
   font-weight: 500;
   display: inline-block;
 }
+
 .about-us-courses-container2 {
   position: absolute;
   top: 76px;
@@ -142,12 +160,14 @@
   width: 99px;
   height: 102px;
 }
+
 .terms-of-use-container2 {
   top: 81px;
   left: 871px;
   width: 189px;
   height: 81px;
 }
+
 .privacy-policy2,
 .terms-of-use-container2,
 .xyzgmailcom2 {
@@ -156,12 +176,14 @@
   font-family: var(--body-text);
   color: var(--color-black);
 }
+
 .xyzgmailcom2 {
   top: 76px;
   left: 454px;
   font-size: var(--body-text-size);
   font-weight: 500;
 }
+
 .privacy-policy2 {
   top: 178px;
   left: 184px;
@@ -171,6 +193,7 @@
   width: 176px;
   height: 61px;
 }
+
 .frame-icon2,
 .vector-icon5 {
   position: absolute;
@@ -180,6 +203,7 @@
   height: 41px;
   overflow: hidden;
 }
+
 .vector-icon5 {
   height: 17.15%;
   width: 3.47%;
@@ -190,6 +214,7 @@
   max-width: 100%;
   max-height: 100%;
 }
+
 .footer2 {
   position: absolute;
   top: 1086px;
@@ -200,6 +225,7 @@
   font-size: var(--sub-heading-size);
   color: var(--color-gray);
 }
+
 .login-button-item {
   position: absolute;
   top: 0;
@@ -209,6 +235,7 @@
   width: 349.6px;
   height: 91.93px;
 }
+
 .login1 {
   position: absolute;
   top: 33.93px;
@@ -219,6 +246,7 @@
   width: 281.8px;
   height: 48.21px;
 }
+
 .login-button2 {
   position: absolute;
   top: 195.07px;
@@ -228,6 +256,7 @@
   cursor: pointer;
   color: var(--color-black);
 }
+
 .password1,
 .user-name {
   position: absolute;
@@ -239,9 +268,11 @@
   width: 309.34px;
   height: 56.05px;
 }
+
 .password1 {
   top: 114px;
 }
+
 .login-form-child,
 .login-form-item {
   position: absolute;
@@ -252,10 +283,12 @@
   width: 683.31px;
   height: 40.36px;
 }
+
 .login-form-item {
   top: 102.02px;
   left: 290.69px;
 }
+
 .login-form {
   position: absolute;
   top: 677px;
@@ -264,6 +297,7 @@
   height: 287px;
   color: var(--color-white);
 }
+
 .login-page-child {
   position: absolute;
   top: 724px;
@@ -273,6 +307,7 @@
   width: 86px;
   height: 112px;
 }
+
 .forgot-your-password {
   position: absolute;
   top: 908px;
@@ -281,6 +316,7 @@
   line-height: 20px;
   font-weight: 600;
 }
+
 .login-page {
   position: relative;
   background-color: var(--color-darkturquoise);
@@ -293,92 +329,92 @@
   font-family: var(--sub-heading);
 }
 
-.foot_content{
-    padding: 30px 0 50px 0;
-    overflow-x: hidden;
-    display: flex;
-    background-color: white;
-    justify-content: space-evenly;
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    top: 1050px;
-    border: none;
+.foot_content {
+  padding: 30px 0 50px 0;
+  overflow-x: hidden;
+  display: flex;
+  background-color: white;
+  justify-content: space-evenly;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 1050px;
+  border: none;
 }
 
-.Rights{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.Rights {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.email{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.menu{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.menu_contents{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.menu_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.services{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.serv_contents{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.serv_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.socials{
-    display: flex ;
-    flex-direction: column;
-    gap: 10px;
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.social_img{
-    display: flex;
-    gap: 20px;
+.social_img {
+  display: flex;
+  gap: 20px;
 }
 
-.social_img a{
-    height: 30px;
-    width: 30px;
+.social_img a {
+  height: 30px;
+  width: 30px;
 }
 
-.foot_content h2{
-    font-weight: bold;
-    font-size: 16px;
-    word-spacing: 10%;
-    font-family: outfit;
+.foot_content h2 {
+  font-weight: bold;
+  font-size: 16px;
+  word-spacing: 10%;
+  font-family: outfit;
 }
 
-.foot_content a{
-    text-decoration: none;
-    color: black;
-    font-family: Roboto;
-    font-size: 16px;
+.foot_content a {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-size: 16px;
 }
 
-.foot_content p{
-    color: black;
-    font-family: Roboto;
-    font-size: 16px;
+.foot_content p {
+  color: black;
+  font-family: Roboto;
+  font-size: 16px;
 }
 
-.Rights a{
-    font-size: 18px;
-    text-decoration: underline;
+.Rights a {
+  font-size: 18px;
+  text-decoration: underline;
 }

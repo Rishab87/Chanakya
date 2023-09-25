@@ -1,31 +1,31 @@
-@font-face{
-  font-family: Outfit; 
+@font-face {
+  font-family: Outfit;
   src: url(../Outfit-VariableFont_wght.ttf);
 }
 
-@font-face{
+@font-face {
   font-family: Roboto;
   src: url(../Roboto-Medium.ttf);
 }
 
-*{
+* {
   font-family: Outfit;
 }
 
-body{
-  margin:0;
-  padding:0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.rectangle-parent iframe{
+.rectangle-parent iframe {
   margin-top: 5%;
   width: 70%;
   height: 80%;
-  border: 1px solid  #0abbc6;
+  border: 1px solid #0abbc6;
   border-radius: 20px;
 }
 
-form{
+form {
   background-color: white;
   border-radius: 20px;
   margin-top: 2%;
@@ -40,6 +40,7 @@ form{
   width: 931px;
   height: 1429px;
 }
+
 .level-1-child {
   top: 180%;
   left: 663px;
@@ -49,12 +50,14 @@ form{
   width: 861px;
   height: 821px;
 }
+
 .text {
   position: absolute;
   top: 761px;
   left: 736px;
   font-size: 18px;
 }
+
 .level-1-inner,
 .level-1-item {
   position: absolute;
@@ -63,16 +66,19 @@ form{
   width: 861px;
   height: 821px;
 }
+
 .level-1-item {
   top: 180%;
   left: -315px;
   background-color: var(--color-lightblue-100);
 }
+
 .level-1-inner {
   top: -60px;
   left: -545px;
   background-color: rgba(198, 231, 248, 0.54);
 }
+
 .level-11 {
   position: absolute;
   top: 126px;
@@ -83,6 +89,7 @@ form{
   width: 665px;
   height: 143px;
 }
+
 .answer-the-following,
 .watch-the-video {
   position: absolute;
@@ -94,12 +101,14 @@ form{
   width: 787px;
   height: 85px;
 }
+
 .answer-the-following {
   top: 1196px;
   left: 153px;
   text-align: left;
   width: 957px;
 }
+
 .points-child {
   position: absolute;
   top: 0;
@@ -109,6 +118,7 @@ form{
   width: 210px;
   height: 57px;
 }
+
 .y-6di5usrkc5p2qc1k-removebg-pr-icon {
   position: absolute;
   top: 0;
@@ -117,6 +127,7 @@ form{
   height: 57px;
   object-fit: cover;
 }
+
 .div {
   position: absolute;
   top: 9px;
@@ -128,11 +139,13 @@ form{
   width: 169px;
   height: 23px;
 }
+
 .points,
 .points-item {
   position: absolute;
   height: 57px;
 }
+
 .points {
   top: 29px;
   left: 887px;
@@ -140,6 +153,7 @@ form{
   text-align: right;
   color: var(--color-white);
 }
+
 .points-item {
   top: 0;
   left: 81px;
@@ -147,6 +161,7 @@ form{
   background-color: var(--color-white);
   width: 210px;
 }
+
 .bronze,
 .tier {
   position: absolute;
@@ -154,6 +169,7 @@ form{
   left: 0;
   font-weight: 500;
 }
+
 .bronze {
   left: 119px;
   color: var(--color-black);
@@ -161,6 +177,7 @@ form{
   display: inline-block;
   width: 169px;
 }
+
 .points2 {
   position: absolute;
   top: 29px;
@@ -170,6 +187,7 @@ form{
   text-align: right;
   color: var(--color-white);
 }
+
 .next-button-child {
   position: absolute;
   top: 0;
@@ -179,6 +197,7 @@ form{
   width: 206px;
   height: 65px;
 }
+
 .next {
   position: absolute;
   top: 21px;
@@ -189,6 +208,7 @@ form{
   width: 152.87px;
   height: 24px;
 }
+
 .next-button,
 .next-button-wrapper {
   position: absolute;
@@ -197,6 +217,7 @@ form{
   width: 40%;
   height: 20%;
 }
+
 .next-button-wrapper {
   top: 80%;
   left: 60%;
@@ -216,15 +237,18 @@ form{
   width: 910px;
   height: 55px;
 }
+
 .q2-what-special {
   top: 1529px;
   left: 150px;
 }
+
 .to-do {
   position: relative;
   width: 513px;
   height: 84px;
 }
+
 .group-child {
   position: absolute;
   top: 0;
@@ -234,6 +258,7 @@ form{
   width: 1113px;
   height: 624px;
 }
+
 .pngwing-1-icon {
   position: absolute;
   top: 192px;
@@ -242,6 +267,7 @@ form{
   height: 211px;
   object-fit: cover;
 }
+
 .rectangle-parent {
   position: absolute;
   top: 463px;
@@ -249,12 +275,14 @@ form{
   width: 1113px;
   height: 624px;
 }
+
 .level-1,
 .q2-options {
   position: relative;
   width: 513px;
   height: 372px;
 }
+
 .level-1 {
   background-color: #0abbc6;
   width: 100%;
@@ -265,12 +293,14 @@ form{
   color: var(--color-black);
   font-family: var(--font-outfit);
 }
+
 .level-1,
 .q2-options {
   position: relative;
   width: 513px;
   height: 372px;
 }
+
 .level-1 {
   background-color: #0abbc6;
   width: 100%;

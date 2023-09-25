@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +15,7 @@
 }
 
 
-.container{
+.container {
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
@@ -24,36 +24,39 @@
     background-color: #0ABBC6;
 }
 
-.gradient{
-    position: absolute; /*remove these gradients make a blur circle*/
+.gradient {
+    position: absolute;
+    /*remove these gradients make a blur circle*/
     top: 0;
     left: 0;
 }
 
-.gradient2{
+.gradient2 {
     position: absolute;
     top: -550px;
     right: -150px;
 }
 
-.gradient3{
+.gradient3 {
     position: absolute;
     top: 400px;
     left: -400px;
     height: 600px;
 }
 
-.gradient4{
+.gradient4 {
     position: absolute;
     right: -550px;
     height: 600px;
 }
+
 .wrapper {
-    margin-left:12%;
+    margin-left: 12%;
     width: 1200px;
     height: 100vh;
     z-index: 2;
 }
+
 nav {
     width: 100%;
     display: flex;
@@ -61,13 +64,13 @@ nav {
     margin: 20px 20px 100px 20px;
 }
 
-.nav_elements{
+.nav_elements {
     display: flex;
     justify-content: space-evenly;
     width: 70%;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     font-size: 10px;
     color: white;
@@ -77,7 +80,7 @@ nav a{
     z-index: 2;
 }
 
-.grid img{
+.grid img {
     overflow-y: hidden;
     position: relative;
     bottom: 100px;
@@ -88,9 +91,9 @@ nav a{
 
 }
 
-.grid{
+.grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px 1fr 1fr;
 }
 
@@ -99,7 +102,7 @@ nav a{
     z-index: 100;
 }
 
-.grid p{
+.grid p {
     margin: 50px 0 50px 0;
     font-family: Roboto;
     color: white;
@@ -108,14 +111,14 @@ nav a{
     z-index: 2;
 }
 
-.grid h1{
+.grid h1 {
     color: white;
     font-family: Outfit;
     font-size: 50px;
     width: 300px;
 }
 
-#Login{
+#Login {
     background-color: transparent;
     border: 1px solid #C7E7F8;
     border-radius: 83px;
@@ -124,7 +127,7 @@ nav a{
     z-index: 10;
 }
 
-#Register{
+#Register {
     background-color: #C7E7F8;
     border: 1px solid #C7E7F8;
     border-radius: 83px;
@@ -134,7 +137,7 @@ nav a{
     z-index: 100;
 }
 
-.buttons button{
+.buttons button {
     font-weight: bold;
     font-size: 16px;
     word-spacing: 10%;
@@ -144,7 +147,7 @@ nav a{
 
 
 
-.leaderboard h2{
+.leaderboard h2 {
     margin-top: 20px;
     font-weight: normal;
     font-size: 18px;
@@ -154,7 +157,7 @@ nav a{
     font-weight: 500;
 }
 
-.rectangle{
+.rectangle {
     width: 1200px;
     background-color: white;
     border-radius: 50px;
@@ -163,22 +166,22 @@ nav a{
     flex-direction: column;
     gap: 30px;
     margin: 20px 20px 100px 20px;
-    
+
 }
 
-.leader_head{
+.leader_head {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.contents{
+.contents {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.contents h3{
+.contents h3 {
     margin-left: 20px;
     font-family: Roboto;
     font-size: 16px;
@@ -187,44 +190,44 @@ nav a{
     text-align: center;
 }
 
-.Rank{
+.Rank {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
 }
 
-.Name{
+.Name {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
 }
 
-.Score{
+.Score {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
 }
 
-.League{
+.League {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
 }
 
-.grid2{
+.grid2 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
 }
 
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.content h1{
+.content h1 {
     color: white;
     font-family: Outfit;
     font-size: 50px;
@@ -232,7 +235,7 @@ nav a{
     z-index: 2;
 }
 
-.content h2{
+.content h2 {
     font-size: 25px;
     color: white;
     font-family: Outfit;
@@ -240,7 +243,7 @@ nav a{
     z-index: 2;
 }
 
-.content button{
+.content button {
     font-weight: bold;
     font-size: 16px;
     word-spacing: 10%;
@@ -250,11 +253,11 @@ nav a{
     border-radius: 83px;
     height: 45px;
     width: 133px;
-    align-self:center;
+    align-self: center;
     z-index: 2;
 }
 
-.testimonials{
+.testimonials {
     position: relative;
     padding-top: 100px;
     display: flex;
@@ -262,14 +265,14 @@ nav a{
     flex-direction: column;
 }
 
-.head{
+.head {
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
 }
 
-.head h3{
+.head h3 {
     font-weight: normal;
     font-size: 18px;
     word-spacing: 10%;
@@ -278,21 +281,21 @@ nav a{
     font-weight: 500;
 }
 
-.head h2{
+.head h2 {
     text-align: center;
     color: white;
     font-family: Outfit;
     font-size: 50px;
-    width: 40%;  
+    width: 40%;
 }
 
-.reviews{
+.reviews {
     display: flex;
     gap: 30px;
     justify-content: center;
 }
 
-.review1{
+.review1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,20 +307,20 @@ nav a{
     position: relative;
 }
 
-.reviews h2{
+.reviews h2 {
     padding-top: 100px;
     font-family: Outfit;
     font-size: 20px;
     padding-left: 20px
 }
 
-.reviews p{
+.reviews p {
     padding-left: 20px;
     font-family: Roboto;
     font-size: 18px
 }
 
-.review2{
+.review2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -329,7 +332,7 @@ nav a{
     position: relative;
 }
 
-.review3{
+.review3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,12 +344,13 @@ nav a{
     position: relative;
 }
 
-.reviews img{
+.reviews img {
     position: absolute;
     top: -50px;
     left: 136.5px;
 }
-.foot_content{
+
+.foot_content {
     padding: 30px 0 50px 0;
     overflow-x: hidden;
     display: flex;
@@ -359,80 +363,79 @@ nav a{
     border: none;
 }
 
-.Rights{
+.Rights {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.email{
+.email {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.menu_contents{
+.menu_contents {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.services{
+.services {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.serv_contents{
+.serv_contents {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.socials{
-    display: flex ;
+.socials {
+    display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.social_img{
+.social_img {
     display: flex;
     gap: 20px;
 }
 
-.social_img a{
+.social_img a {
     height: 30px;
     width: 30px;
 }
 
-.foot_content h2{
+.foot_content h2 {
     font-weight: bold;
     font-size: 16px;
     word-spacing: 10%;
     font-family: outfit;
 }
 
-.foot_content a{
+.foot_content a {
     text-decoration: none;
     color: black;
     font-family: Roboto;
     font-size: 16px;
 }
 
-.foot_content p{
+.foot_content p {
     color: black;
     font-family: Roboto;
     font-size: 16px;
 }
 
-.Rights a{
+.Rights a {
     font-size: 18px;
     text-decoration: underline;
 }
-

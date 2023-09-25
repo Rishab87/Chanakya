@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="register.css">
     <link rel="shortcut icon" href="../Images/Rectangle (1).png" type="image/x-icon">
 </head>
+
 <body>
-    
+
     <div class="container">
         <img class="gradient-icon1" alt="" src="./public/gradient1.svg" />
         <div class="wrapper">
@@ -25,8 +27,8 @@
             <div class="type">
                 <div class="inputs">
                     <form id="registration-form">
-                    <label for="first" class="label">First Name<sup style="color: red;">*</sup>:&nbsp&nbsp</label>
-                    <input type="text" id="first" class="input" placeholder="Enter First Name" required>
+                        <label for="first" class="label">First Name<sup style="color: red;">*</sup>:&nbsp&nbsp</label>
+                        <input type="text" id="first" class="input" placeholder="Enter First Name" required>
                 </div>
 
                 <div class="inputs">
@@ -35,7 +37,7 @@
                 </div>
 
                 <div class="inputs">
-                    <label for="gender" class="label" >Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <label for="gender" class="label">Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
                     <select name="" id="gender">
                         <option value="" selected disabled>--Select Gender--</option>
                         <option value="Male">Male</option>
@@ -45,27 +47,32 @@
                 </div>
 
                 <div class="inputs">
-                    <label for="email" class="label">Email Id<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <label for="email" class="label">Email Id<sup
+                            style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
                     <input type="email" id="email" class="input" placeholder="Enter Email ID" required>
                 </div>
 
                 <div class="inputs">
-                    <label for="mobile" class="label">Mobile No<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp</label>
+                    <label for="mobile" class="label">Mobile No<sup
+                            style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp</label>
                     <input type="tel" id="mobile" class="input" placeholder="Enter Mobile No." required>
                 </div>
 
                 <div class="inputs">
-                    <label for="user" class="label">Username<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp</label>
+                    <label for="user" class="label">Username<sup
+                            style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp</label>
                     <input type="text" id="user " class="input" placeholder="Enter Username" required>
                 </div>
 
                 <div class="inputs">
-                    <label for="pass" class="label">Password<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <label for="pass" class="label">Password<sup
+                            style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
                     <input type="password" id="pass" class="input" placeholder="Enter password" required>
                 </div>
 
                 <div class="inputs">
-                    <label for="confirm" class="label">Confirm<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <label for="confirm" class="label">Confirm<sup
+                            style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
                     <input type="password" id="confirm" class="input" placeholder="Re-enter passowrd" required>
                 </div>
             </div>
@@ -75,7 +82,7 @@
                 <a href="../login/login-page.html">Already a member?</a>
             </div>
         </div>
-    </form>
+        </form>
 
         <footer>
             <div class="foot_content">
@@ -87,44 +94,44 @@
 
                     <a href="#">Privacy Policy</a>
                 </div>
-                
+
                 <div class="email">
                     <h2>EMAIL</h2>
                     <div class="id">
                         <a href="#">xyz@gmail.com</a>
                     </div>
-                    
+
                 </div>
-    
+
                 <div class="menu">
                     <h2>MENU</h2>
-    
+
                     <div class="menu_contents">
                         <a href="#">ABOUT US</a>
                         <a href="#">COURSES</a>
                         <a href="#">CONTACTS</a>
                     </div>
-    
+
                 </div>
                 <div class="services">
                     <h2>SERVICES</h2>
-    
+
                     <div class="serv_contents">
                         <a href="#">TERMS OF USE</a>
                         <a href="#">REFUND & CANCELLATION</a>
                     </div>
                 </div>
-    
+
                 <div class="socials">
                     <h2>OUR SOCIALS</h2>
-    
+
                     <div class="social_img">
                         <a href="#"><img src="../Images/Vector.png" alt=""></a>
                         <a href="#"><img src="../Images/Vector (1).png" alt=""></a>
                         <a href="#"><img src="../Images/Vector (2).png" alt=""></a>
                     </div>
                 </div>
-    
+
             </div>
         </footer>
 
@@ -143,11 +150,12 @@
             var pass = document.getElementById("pass");
             var confirm = document.getElementById("confirm");
 
-                if (pass.value == confirm.value) {
-                    window.location.href = "../start/start_page1.html";
-                } else {
-                    alert('Password and Confirm Password are not the same');
-                }
+            if (pass.value == confirm.value) {
+                window.location.href = "../start/start_page1.html";
+            } else {
+                alert('Password and Confirm Password are not the same');
+            }
         });
     </script>
+
 </html>
