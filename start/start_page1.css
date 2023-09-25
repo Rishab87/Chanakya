@@ -12,6 +12,10 @@
   border: none;
 }
 
+.l1:hover{
+    scale: 1.1;
+}
+
 body{
   height: 1500px;
   max-width: 100vw;
