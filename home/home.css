@@ -134,6 +134,14 @@ nav a{
     z-index: 100;
 }
 
+#Register:hover{
+    scale: 1.1;
+}
+
+#Login:hover{
+    scale: 1.1;
+}
+
 .buttons button{
     font-weight: bold;
     font-size: 16px;
