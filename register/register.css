@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,7 +15,7 @@
 }
 
 
-.container{
+.container {
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
@@ -24,28 +24,28 @@
 }
 
 .wrapper {
-    margin-left:12%;
+    margin-left: 12%;
     width: 1200px;
     height: 100vh;
 }
 
-.header{
+.header {
     margin-top: 10%;
     display: flex;
     justify-content: space-between;
 }
 
-.header img{
+.header img {
     width: 40%;
 }
 
-.heading{
+.heading {
     display: flex;
     flex-direction: column;
     gap: 100px;
 }
 
-.heading h1{
+.heading h1 {
     font-family: Outfit;
     font-size: 50px;
     width: 65%;
@@ -53,7 +53,7 @@
     color: white;
 }
 
-.heading p{
+.heading p {
     font-family: Roboto;
     color: white;
     font-size: 18px;
@@ -61,7 +61,7 @@
     width: 55%;
 }
 
-.type{
+.type {
     margin-top: 8%;
     position: relative;
     right: 300px;
@@ -74,34 +74,34 @@
     display: flex;
 }
 
-.inputs .input{
+.inputs .input {
     border-radius: 25px;
     border: 1px solid white;
     height: 35px;
     width: 600px;
 }
 
-.inputs select{
+.inputs select {
     border-radius: 25px;
     border: 1px solid white;
-    height: 35px;  
-    width: 600px; 
+    height: 35px;
+    width: 600px;
 }
 
-.inputs .label{
+.inputs .label {
     font-family: Outfit;
     font-size: 25px;
-    
+
 }
 
-.buttons{
+.buttons {
     margin-top: 5%;
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-.buttons button{
+.buttons button {
     background-color: #C7E7F8;
     border: 1px solid #C7E7F8;
     border-radius: 83px;
@@ -114,7 +114,7 @@
     font-family: Outfit;
 }
 
-.buttons a{
+.buttons a {
     font-size: 25px;
     text-decoration: underline;
     font-style: Outfit;
@@ -122,7 +122,7 @@
     font-weight: bold;
 }
 
-.foot_content{
+.foot_content {
     position: absolute;
     top: 1200px;
     z-index: 2;
@@ -135,83 +135,83 @@
     height: 200px;
 }
 
-.Rights{
+.Rights {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.email{
+.email {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.menu_contents{
+.menu_contents {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.services{
+.services {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.serv_contents{
+.serv_contents {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.socials{
-    display: flex ;
+.socials {
+    display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.social_img{
+.social_img {
     display: flex;
     gap: 20px;
 }
 
-.social_img a{
+.social_img a {
     height: 30px;
     width: 30px;
 }
 
-.foot_content h2{
+.foot_content h2 {
     font-weight: bold;
     font-size: 16px;
     word-spacing: 10%;
     font-family: Outfit;
 }
 
-.foot_content a{
+.foot_content a {
     text-decoration: none;
     color: black;
     font-family: Roboto;
     font-size: 16px;
 }
 
-.foot_content p{
+.foot_content p {
     color: black;
     font-family: Roboto;
     font-size: 16px;
 }
 
-.Rights a{
+.Rights a {
     font-size: 18px;
     text-decoration: underline;
 }
 
-h1{
+h1 {
     font-size: 200px;
 }

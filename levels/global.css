@@ -1,54 +1,55 @@
-@font-face{
-  font-family: Outfit; 
+@font-face {
+  font-family: Outfit;
   src: url(../Outfit-VariableFont_wght.ttf);
 }
 
-@font-face{
+@font-face {
   font-family: Roboto;
   src: url(../Roboto-Medium.ttf)
 }
 
 body {
   background: #0ABBC6;
-  max-height: 1700px; 
-  max-width: 100vw;"
-  margin: 0;
+  max-height: 1700px;
+  max-width: 100vw;
+  "
+ margin: 0;
   line-height: normal;
- }
+}
 
- :root {
-   --sub-heading: Outfit;
-   --body-text: Roboto;
+:root {
+  --sub-heading: Outfit;
+  --body-text: Roboto;
 
-   --font-size-11xl: 30px;
-   --font-size-21xl: 40px;
-   --font-size-101xl: 120px;
-   --font-size-lg: 18px;
-   --sub-heading-size: 20px;
-   --body-text-size: 16px;
-   --font-size-38xl: 57px;
-   --font-size-51xl: 70px;
-   --font-size-6xl: 25px;
-   --font-size-41xl: 60px;
+  --font-size-11xl: 30px;
+  --font-size-21xl: 40px;
+  --font-size-101xl: 120px;
+  --font-size-lg: 18px;
+  --sub-heading-size: 20px;
+  --body-text-size: 16px;
+  --font-size-38xl: 57px;
+  --font-size-51xl: 70px;
+  --font-size-6xl: 25px;
+  --font-size-41xl: 60px;
 
-   --color-darkturquoise: #0abbc6;
-   --color-black: #000;
-   --color-white: #fff;
-   --color-lightblue-100: #c7e7f8;
-   --color-lightblue-200: #c4e7f7;
-   --color-lightblue-300: rgba(198, 231, 248, 0.39);
-   --color-lightblue-400: rgba(198, 231, 248, 0.61);
-   --color-lightblue-500: rgba(198, 231, 248, 0.54);
-   --color-gray: #390808;
-   --color-gainsboro: rgba(217, 217, 217, 0);
+  --color-darkturquoise: #0abbc6;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-lightblue-100: #c7e7f8;
+  --color-lightblue-200: #c4e7f7;
+  --color-lightblue-300: rgba(198, 231, 248, 0.39);
+  --color-lightblue-400: rgba(198, 231, 248, 0.61);
+  --color-lightblue-500: rgba(198, 231, 248, 0.54);
+  --color-gray: #390808;
+  --color-gainsboro: rgba(217, 217, 217, 0);
 
-   --padding-mid: 17px;
-   --padding-17xl: 36px;
+  --padding-mid: 17px;
+  --padding-17xl: 36px;
 
-   --br-11xl: 30px;
-   --br-51xl: 70px;
-   --br-21xl: 40px;
-   --br-64xl: 83px;
-   --br-6xl: 25px;
-   --br-xl: 20px;
- }
+  --br-11xl: 30px;
+  --br-51xl: 70px;
+  --br-21xl: 40px;
+  --br-64xl: 83px;
+  --br-6xl: 25px;
+  --br-xl: 20px;
+}
