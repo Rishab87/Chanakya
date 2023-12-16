@@ -4,115 +4,114 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
-
+  <title>Login-Page</title>
   <link rel="stylesheet" href="../levels/global.css" />
   <link rel="stylesheet" href="../login/login-page.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;600&display=swap" />
-
-  <style>
-    .not-a-member-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 20px;
-      color: white;
-      text-decoration: none;
-      font-family: 'Outfit', sans-serif;
-    }
-  </style>
+  <script src="https://kit.fontawesome.com/137076d6dc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="login-page">
-    <img class="gradient-icon2" alt="" src="../Images/extra/gradient2.svg" />
+  <div class="container">
+    <div class="login-page">
 
-    <b class="text2"> </b>
-    <div class="hero">
-      <div class="hero-child"></div>
-      <b class="already-a-member1">Already a member?</b>
-      <div class="log-in-to">Log In to continue your journey!</div>
-      <img class="rectangle-icon3" alt="" src="../Images/extra/rectangle2@2x.png" />
-    </div>
-    <div class="login-form">
-      <div class="login-button2" id="loginButtonContainer">
-        <div class="login-button-item"></div>
-        <div class="login1">Login</div>
+      <!-- header -->
+
+      <div class="header">
+        <!-- header text -->
+        <div class="heading" style="width: 1500px;">
+          <h1 style="font-size: 80px;">Already a member?</h1>
+          <p style="font-size: 30px; width: 100%;">Log In to continue your journey!</p>
+        </div>
+        <!-- header image -->
+        <img src="../Images/books.png" alt="">
       </div>
-      <div class="user-name">User Name:</div>
-      <div class="password1">Password:</div>
-      <input type="text" placeholder="Enter Username"
-        style="width: 500px; height: 30px; border-radius: 40px; position: absolute; left: 300px; font-size: 20px; border-width: 5px; border-color: white;"
-        id="user" />
-      <input type="password" placeholder="Enter Password"
-        style="width: 500px; height: 30px; border-radius: 40px; position: absolute; left: 300px; top: 100px; font-size: 20px; border-width: 5px; border-color: white;"
-        id="pass" />
+
+      <!-- Login Form -->
+
+      <form id="loginForm" action="http://localhost:3000/api/login" method="POST">
+        
+        <!-- user-id and password -->
+        <div class="type">
+          <div class="inputs">
+            <label for="user" class="label">Username<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="user" class="input" placeholder="Enter Username" required>
+          </div>
+
+          <div class="inputs">
+            <label for="pass" class="label">Password<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="password" id="pass" class="input" placeholder="Enter Password" required>
+          </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="buttons">
+          <button value="Login" id="loginButton" type="submit">Login</button>
+          <a id="anchor" href="../forgot/forgot-password.html">Forgot your password?</a>
+        </div>
+
+      </form>
     </div>
-    <div class="login-page-child"></div>
-    <a href="../forgot/forgot-password.html" style="text-decoration: none; color: black;">
-      <div class="forgot-your-password">Forgot your password?</div>
-    </a>
+
+    <a href="../register/register.html" class="not-a-member-button" id="new_member">Not a member? Register here</a>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="foot_content">
+          <div class="Rights">
+              <h2>CHANAKYA</h2>
+
+              <p>ALL RIGHTS RESERVED</p>
+              <p>© Copyright 2023</p>
+
+              <a href="#">Privacy Policy</a>
+          </div>
+
+          <div class="email">
+              <h2>EMAIL</h2>
+              <div class="id">
+                  <a href="#">xyz@gmail.com</a>
+              </div>
+
+          </div>
+
+          <div class="menu">
+              <h2>MENU</h2>
+
+              <div class="menu_contents">
+                  <a href="#">ABOUT US</a>
+                  <a href="#">COURSES</a>
+                  <a href="#">CONTACTS</a>
+              </div>
+
+          </div>
+          <div class="services">
+              <h2>SERVICES</h2>
+
+              <div class="serv_contents">
+                  <a href="#">TERMS OF USE</a>
+                  <a href="#">REFUND & CANCELLATION</a>
+              </div>
+          </div>
+
+          <div class="footer-element">
+              <h2 class="social-head">OUR SOCIALS</h2>
+              <div class="social_img">
+                  <a href="https://www.linkedin.com/in/rishab-kumar-jha-863914275"><i class="fa-brands fa-linkedin fa-2x icon"></i></a>
+                  <a href="https://twitter.com/rishabkrjha"><i class="fa-brands fa-x-twitter fa-2x icon"></i></a>
+                  <a href="https://github.com/Rishab87"><i class="fa-brands fa-github fa-2x icon"></i></a>
+                  <a href="https://www.instagram.com/rishabkumar.jha/"><i class="fa-brands fa-instagram fa-2x icon"></i></a>
+                  <a href="mailto:kumarjharishab@gmail.com"><i class="fa-regular fa-envelope fa-2x icon"></i></a>
+              </div>
+          </div>
+
+      </div>
+  </footer>
   </div>
 
-  <a href="../register/register.html" class="not-a-member-button">Not a member? Register here</a>
-
-  <footer>
-    <div class="foot_content">
-      <div class="Rights">
-        <h2>CHANAKYA</h2>
-        <p>ALL RIGHTS RESERVED</p>
-        <p>© Copyright 2023</p>
-        <a href="#">Privacy Policy</a>
-      </div>
-
-      <div class="email">
-        <h2>EMAIL</h2>
-        <div class="id">
-          <a href="#">xyz@gmail.com</a>
-        </div>
-      </div>
-
-      <div class="menu">
-        <h2>MENU</h2>
-        <div class="menu_contents">
-          <a href="#">ABOUT US</a>
-          <a href="#">COURSES</a>
-          <a href="#">CONTACTS</a>
-        </div>
-      </div>
-      <div class="services">
-        <h2>SERVICES</h2>
-        <div class="serv_contents">
-          <a href="#">TERMS OF USE</a>
-          <a href="#">REFUND & CANCELLATION</a>
-        </div>
-      </div>
-
-      <div class="socials">
-        <h2>OUR SOCIALS</h2>
-        <div class="social_img">
-          <a href="#"><img src="../Images/Vector.png" style="height: 30px;"></a>
-          <a href="#"><img src="../Images/Vector (1).png" alt="" style="height: 30px;"></a>
-          <a href="#"><img src="../Images/Vector (2).png" alt="" style="height: 30px;"></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script>
-    var loginButtonContainer = document.getElementById("loginButtonContainer");
-    var user = document.getElementById("user");
-    var pass = document.getElementById("pass");
-    if (loginButtonContainer) {
-      loginButtonContainer.addEventListener("click", function (e) {
-        if (user.value && pass.value) {
-          window.location.href = "../start/start_page1.html";
-        }
-        else {
-          alert("Enter both username and password.");
-        }
-      });
-    }
-  </script>
+  <script src="login-page.js"></script>
+  <div id="message" class="message"></div>
+  
 </body>
-
 </html>
