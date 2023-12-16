@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color: gold;
+    color: white;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(../Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../Roboto-Medium.ttf);
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav{
+    margin-top: 1%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.back-btn{
+    margin-left: 20px;
+    color: white;
+}
+
+nav h1{
+    color: white;
+    font-size: 50px;
+    font-family: Outfit;
+    margin: auto auto;
+}
+
+.main-heading{
+    font-family: Outfit;
+    color: #fffe7a;
+    align-self: center;
+    font-size: 35px;
+    opacity: 0;
+    transform: translateY(10%);
+}
+
+.main-section{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.levels{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.levels a{
+    text-decoration: none;
+}
+
+#level1{
+    background-image: url(../Images/unlock-lvl.png);
+    background-repeat: no-repeat;
+    height: 91px;
+    width: 263px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit;
+    color: white;
+    font-size: 50px;
+    font-weight:bold;
+}
+
+.level-box{
+    background-image: url(../Images/lock-lvl.png);
+    background-repeat: no-repeat;
+    height: 91px;
+    width: 263px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit;
+    color: white;
+    font-size: 50px;
+    font-weight:bold;
+    transform: translateX(-10%);
+    opacity: 0;
+}
+
+.level-box:hover{
+    scale: 1.1;
+    transition: scale 0.5s linear;
+}
+
+#level1::after{
+    content: "Level 1";
+}
+
+#level2{
+    align-self: flex-end;
+    transform: translateX(10%);
+}
+
+#level2::after{
+    content: "Level 2";
+}
+
+#level3::after{
+    content: "Level 3";
+}
+
+#level4::after{
+    content: "Level 4";
+}
+
+#level4{
+    align-self: flex-end;
+    transform: translateX(10%);
+}
+
+#level5::after{
+    content: "Level 5";
+}
+
+.main-section button{
+    align-self: flex-end;
+}
+
+.finish-btn{
+    background-color: gold;
+    border: 1px solid gold;
+    border-radius: 83px;
+    height: 91px;
+    width: 263px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 90px;
+    opacity: 0;
+    transform: translateX(10%);
+}
+
+.finish-btn:hover{
+    scale: 1.1;
+    transition: scale 0.3s linear;
+}
+
+.rocket{
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+    right: 20px;
+    animation: rocketMovement infinite 5s linear;
+    opacity: 0;
+    transform: translateY(10%);
+}
+
+@keyframes rocketMovement {
+    50%{
+        top: 100px;
+    }
+}
+
+@media (max-width: 769px) {
+    .wrapper{
+        width: 77%;
+    }
+    
+    nav{
+        margin-top: 10%;
+    }
+    
+    nav h1{
+        font-size: 35px;
+    }
+    .main-section{
+        gap: 70px;
+    }
+
+    .main-heading{
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .levels{
+        width: 84%;
+        gap: 50px;
+    }
+    
+    #level1{
+        height: 54px;
+        width: 153px;
+        background-size: contain;
+        font-size: 25px;
+    }
+    
+    .level-box{
+        height: 54px;
+        width: 153px;
+        background-size: contain;
+        font-size: 25px;
+    }   
+    
+    .finish-btn{
+        height: 54px;
+        width: 153px;
+        font-size: 25px;
+        margin-right: -20px;
+    }
+    
+    .rocket{
+        width: 120px;
+        top: 220px;
+    }
+    
+    @keyframes rocketMovement {
+        50%{
+            top: 150px;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width:1260px){
+    .wrapper{
+        width: 800px;
+    }
+
+    .levels{
+        width: 600px;
+    }
+
+    nav{
+        margin-top: 5%;
+    }
+    .main-section{
+        margin-top: 5%;
+    }
+
+    .rocket{
+        width: 200px;
+        top: 250px;
+    }
+    
+    @keyframes rocketMovement {
+        50%{
+            top: 150px;
+        }
+    }
+
+    .finish-btn{
+        margin-right: 20px;
+    }
+}

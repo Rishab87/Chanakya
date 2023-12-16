@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+*::selection{
+    background-color: gold;
+    color: white;
+}
 
 @font-face {
     font-family: Outfit;
@@ -21,37 +25,148 @@
     overflow-y: auto;
     width: 100vw;
     height: 100vh;
-    background-color: #0ABBC6;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
 }
 
-.gradient {
+.hamburger-icon{
+    display: none;
+    color: white;
+}
+
+.phone-heading{
+    display: none;
+}
+
+.nav-heading{
+    color: #fffe7a;
+    transition: color 0.3s linear;
+}
+
+.contact-modal-head{
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.contact-cross{
     position: absolute;
-    /*remove these gradients make a blur circle*/
+    right: 30px;
+    top: 20px;
+}
+
+.contact-us {
+    cursor: pointer;
+}
+
+.contact-us-modal{
+    font-family: Outfit;
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    color: white;
+    background: #ffffff1a;
+    border: 2px solid #ffffff30;
+    backdrop-filter: blur(15px);
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: fit-content;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    z-index: 5000;
+    align-items: center;
+    scale: 0;
+    transition: scale 0.3s ease-in;
+}
+
+.contact-us-active{
+    scale: 1;
+    transition: scale 0.3 ease-out;
+}
+
+.contact-places{
+    font-family: Roboto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-social{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-social i{
+    z-index: 6;
+    color: white;
+}
+
+.overlay{
+    background-color: black;
+    opacity: 0.5;
+    z-index: 2;
+    position: fixed;
     top: 0;
-    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s linear;
 }
 
-.gradient2 {
-    position: absolute;
-    top: -550px;
-    right: -150px;
+.modal-cross{
+    position: fixed;
+    right: 10%;
+    top: 2%;
+    
 }
 
-.gradient3 {
-    position: absolute;
-    top: 400px;
-    left: -400px;
-    height: 600px;
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 70%;
+    z-index: 5000;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
 }
 
-.gradient4 {
-    position: absolute;
-    right: -550px;
-    height: 600px;
+.modal-elements a{
+    color: black;
+    text-decoration: none;
+    font-family: Outfit;
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+.modal-elements{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav-heading:hover{
+    color: white;
+    transition: color 0.3s linear;
+}
+
+.phone-nav{
+    display: none;
 }
 
 .wrapper {
-    margin-left: 12%;
+    margin: 0 auto;
     width: 1200px;
     height: 100vh;
     z-index: 2;
@@ -78,9 +193,33 @@ nav a {
     justify-content: center;
     font-family: Outfit;
     z-index: 2;
+    transition: color 0.3s linear;
 }
 
-.grid img {
+.nav_elements a:hover{
+    color: #fffe7a;
+    transition: color 0.3s linear;
+}
+
+.nav-underline{
+    width: 100%;
+    background-color: transparent;
+    height: 3px;
+    margin-top: 5px;
+    border-radius: 30px;
+    transition: background-color 0.3s linear;
+}
+
+.nav_elements a:hover .nav-underline{
+    background-color: #fffe7a;
+    transition: background-color 0.3s linear;
+}
+
+.hero-span-text{
+    color: #fffe7a;
+}
+
+.logo {
     overflow-y: hidden;
     position: relative;
     bottom: 100px;
@@ -88,18 +227,24 @@ nav a {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 4;
-
+    transform: translateY(10%);
+    user-select: none;
+    opacity: 0;
 }
 
 .grid {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px 1fr 1fr;
 }
 
 .buttons {
     grid-row-start: 3;
-    z-index: 100;
+}
+
+.buttons button {
+    cursor: pointer;
 }
 
 .grid p {
@@ -109,6 +254,8 @@ nav a {
     font-size: 18px;
     line-height: 20px;
     z-index: 2;
+    transform: translateX(-10%);
+    opacity: 0;
 }
 
 .grid h1 {
@@ -116,6 +263,8 @@ nav a {
     font-family: Outfit;
     font-size: 50px;
     width: 300px;
+    transform: translateX(-20%);
+    opacity: 0;
 }
 
 #Login {
@@ -124,7 +273,9 @@ nav a {
     border-radius: 83px;
     height: 45px;
     width: 133px;
-    z-index: 10;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transform: translateX(-40%);
 }
 
 #Register {
@@ -134,15 +285,24 @@ nav a {
     height: 45px;
     width: 133px;
     margin-right: 35px;
-    z-index: 100;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    transform: translateX(-40%);
 }
 
 #Register:hover {
     scale: 1.1;
+    transition: all 0.3s ease-in;
 }
 
 #Login:hover {
     scale: 1.1;
+    transition: all 0.3s ease-in;
+}
+
+.content button:hover{
+    scale: 1.1;
+    transition: all 0.3s ease-in;
 }
 
 .buttons button {
@@ -150,13 +310,62 @@ nav a {
     font-size: 16px;
     word-spacing: 10%;
     font-family: Outfit;
-    z-index: 100;
+}
+
+.hero-element{
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.grid-col-2{
+    position: relative;
+    height: fit-content;
+}
+
+.grid2-img{
+    width: 90%;
+    z-index: 2;
+    user-select: none;
+}
+
+.yellow-circle{
+    position: absolute;
+    z-index: 1;
+    background-color: #fffe7a;
+    border-radius: 50%;
+    filter: blur(150px);
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    scale: 0.5;
+    animation: 5s infinite alternate circleMovement;
+}
+
+@keyframes circleMovement {
+    50%{
+        scale: 1;
+    }
+}
+
+.woman{
+    width: 300px;
+    bottom: 80px;
+    left: -170px;
+    transform: translateY(10%);
+    animation: 5s infinite alternate womanMovement;
+    opacity: 0;
+}
+
+@keyframes womanMovement {
+    50%{
+        bottom: 160px;
+    }
 }
 
 
-
 .leaderboard h2 {
-    margin-top: 20px;
     font-weight: normal;
     font-size: 18px;
     word-spacing: 10%;
@@ -165,16 +374,23 @@ nav a {
     font-weight: 500;
 }
 
+.leaderboard-heading{
+    transform: translateY(10%);
+    opacity: 0;
+}
+
 .rectangle {
-    width: 1200px;
+    width: 100%;
     background-color: white;
     border-radius: 50px;
-    height: 280px;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin: 20px 20px 100px 20px;
-
+    transform: translateY(10%);
 }
 
 .leader_head {
@@ -183,13 +399,13 @@ nav a {
     justify-content: space-evenly;
 }
 
-.contents {
+.leaderboard-content {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.contents h3 {
+.leaderboard-content h3 {
     margin-left: 20px;
     font-family: Roboto;
     font-size: 16px;
@@ -198,25 +414,7 @@ nav a {
     text-align: center;
 }
 
-.Rank {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-}
-
-.Name {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-}
-
-.Score {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-}
-
-.League {
+.leaderboard-element {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
@@ -263,6 +461,12 @@ nav a {
     width: 133px;
     align-self: center;
     z-index: 2;
+    transition: all 0.3s ease-out
+}
+
+.course {
+    margin-left: 50%;
+    cursor: pointer;
 }
 
 .testimonials {
@@ -278,6 +482,8 @@ nav a {
     gap: 10px;
     flex-direction: column;
     align-items: center;
+    /* opacity: 0;
+    transform: translateY(10%); */
 }
 
 .head h3 {
@@ -303,7 +509,9 @@ nav a {
     justify-content: center;
 }
 
-.review1 {
+.review {
+    /* opacity: 0;
+    transform: translateY(10%); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,49 +521,37 @@ nav a {
     height: 400px;
     width: 400px;
     position: relative;
+    transition: transform 0.3s ease;
+
+}
+
+.review:hover {
+    transform: scale(1.1);
 }
 
 .reviews h2 {
     padding-top: 100px;
     font-family: Outfit;
     font-size: 20px;
-    padding-left: 20px
+    padding: 0 auto;
 }
 
 .reviews p {
-    padding-left: 20px;
+    padding: 0 auto;
     font-family: Roboto;
     font-size: 18px
-}
-
-.review2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border-radius: 30px;
-    background-color: white;
-    height: 400px;
-    width: 400px;
-    position: relative;
-}
-
-.review3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border-radius: 30px;
-    background-color: white;
-    height: 400px;
-    width: 400px;
-    position: relative;
 }
 
 .reviews img {
     position: absolute;
     top: -50px;
     left: 136.5px;
+    user-select: none;
+}
+
+.foot_content a:hover{
+    color: #F4BB44;
+    transition: color 0.3s linear;
 }
 
 .foot_content {
@@ -371,19 +567,7 @@ nav a {
     border: none;
 }
 
-.Rights {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.email {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.menu {
+.footer-element {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -395,32 +579,30 @@ nav a {
     gap: 10px;
 }
 
-.services {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.serv_contents {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.socials {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .social_img {
     display: flex;
     gap: 20px;
 }
 
-.social_img a {
-    height: 30px;
-    width: 30px;
+.active{
+    transform: scaleX(1);
+    transition: transform 0.3s linear;
+}
+
+.active-cross-overlay{
+    display: block;
+    opacity: 0.5;
+    transition: opacity 0.5s linear;
+}
+
+.icon{
+    color: black;
+    transition: color 0.3s linear;
+}
+
+.icon:hover{
+    color: #fffe7a;
+    transition: color 0.3s linear;
 }
 
 .foot_content h2 {
@@ -435,6 +617,7 @@ nav a {
     color: black;
     font-family: Roboto;
     font-size: 16px;
+    transition: color 0.3s linear;
 }
 
 .foot_content p {
@@ -446,4 +629,303 @@ nav a {
 .Rights a {
     font-size: 18px;
     text-decoration: underline;
+}
+
+/*for-tablets*/
+@media (min-width: 769px) and (max-width:1260px) {
+    .wrapper{
+        width: 512.5px;
+    }
+    .hamburger-icon{
+        display: block;
+        
+    }
+    .contact-us-modal{
+        width: 90vw;
+        left: 5%;
+        height: fit-content;
+        gap: 100px;
+    }
+
+    .contact-modal-head{
+        font-size: 18px;
+    }
+    nav a{
+        display: none;
+    }
+    .phone-heading{
+        display: block;
+        color: #fffe7a;
+        font-size: 18px;
+        font-family: Outfit;
+        margin: auto 0;
+        
+    }
+    .nav_elements{
+        display: none;
+    }
+    .phone-nav{
+        justify-content: flex-start;
+        gap: 20px;
+        margin-left: 30px;
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .logo {
+        overflow-y: hidden;
+        position: relative;
+        bottom: 0;
+        width: 150%;
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    
+    }
+
+    .grid h1 {
+        font-size: 45px;
+    }
+
+    .buttons{
+        display: flex;
+    }
+
+    .woman{
+        width: 200px;
+        left: -70px;
+        bottom: -50px;
+    }
+
+    @keyframes womanMovement {
+        50%{
+            bottom: 20px;
+        }
+    }
+
+    .modal a{
+        font-size: 16px;
+    }
+
+    .grid2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .yellow-circle{
+        filter: blur(150px);
+        right: 0;
+        top: 0;
+        bottom: 289px;
+        left: 30px;
+    }
+    .content{
+        padding-top: 30px;
+    }
+    .content h1 {
+        margin-top: 7%;
+        font-size: 50px;
+        width: 100%;
+    }
+    
+    .content h2 {
+        font-size: 30px;
+        padding:0;
+    }
+    .phone-grid2-element{
+        display: flex;
+        gap: 20px;
+    }
+    .content button{
+        width: 30%;
+    }
+
+    .testimonials{
+        padding-top: 0;
+    }
+
+    .head h2 {
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .reviews{
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    .review {
+        height: 350px;
+        width: 100%;
+    }
+    .reviews img {
+        position: absolute;
+        top: -50px;
+        left: 190px;
+    }
+    
+    .foot_content{
+        flex-wrap: wrap;
+        gap: 50px;
+        top: 3600px;
+    }
+    .social-head{
+        align-self: center;
+    }
+}
+
+/*For mobile-phones*/
+@media (max-width: 768px) {
+    .wrapper{
+        width: 288px;
+    }
+
+    .contact-us-modal{
+        width: 90vw;
+        left: 5%;
+        height: fit-content;
+        gap: 30px;
+    }
+
+    .contact-modal-head{
+        font-size: 18px;
+    }
+    
+    .hamburger-icon{
+        display: block;
+        width: 30px;
+        
+    }
+    nav a{
+        display: none;
+    }
+    .phone-heading{
+        display: block;
+        color: #fffe7a;
+        font-size: 18px;
+        font-family: Outfit;
+        margin: auto 0;
+        
+    }
+    .nav_elements{
+        display: none;
+    }
+    .phone-nav{
+        justify-content: flex-start;
+        gap: 20px;
+        margin-left: 30px;
+        display: flex;
+        margin-bottom: 100px;
+    }
+
+    .phone-nav h1{
+        font-size: 20px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 170px 150px 100px 1fr;
+    }
+
+    .grid .logo{
+        grid-column-start: 1;
+        grid-row-end: 2;
+    }
+    .grid h1{
+        grid-row-start: 2;
+        text-align: center;
+    }
+    .grid p{
+        margin: 0;
+        grid-row-start: 3;
+        text-align: center;
+    }
+    .buttons{
+        display: flex;
+        grid-row-start: 4;
+    }
+    .woman{
+        width: 200px;
+        left: -100px;
+    }
+    .leaderboard-content h3 {
+        margin-left: 0;
+        font-size: 12px;
+    }
+    .rectangle{
+        height: fit-content;
+        width: 95vw;
+        position: relative;
+        left: -17.5vw;
+    }
+    .leaderboard h2 {
+        font-size: 14px;
+    }
+    .leaderboard-heading{
+        margin-top: 50px;
+        position: relative;
+        left: -10vw;
+    }
+    .leaderboard-element{
+        row-gap: 30px;
+    }
+    .grid2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .yellow-circle{
+        filter: blur(70px);
+        right: 0;
+        top: 0;
+        bottom: 259px;
+        left: 30px;
+    }
+    .content{
+        padding-top: 30px;
+    }
+    .content h1 {
+        font-size: 28px;
+        width: 100%;
+    }
+    
+    .content h2 {
+        font-size: 18px;
+        padding:0;
+    }
+    .phone-grid2-element{
+        display: flex;
+    }
+    .content button{
+        width: 50%;
+    }
+    .head h2 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .reviews{
+        flex-wrap: wrap;
+        gap: 100px;
+    }
+    .review {
+        height: 288px;
+        width: 100%;
+    }
+    .reviews img {
+        position: absolute;
+        top: -50px;
+        left: 80px;
+    }
+    .foot_content{
+        top: 3200px;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .footer-element h2{
+        align-self: center;
+    }
+    .footer-element a{
+        text-align: center;
+    }
+    .footer-element p{
+        text-align: center;
+    }
 }
