@@ -1,8 +1,17 @@
+    /* css code for register page */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+*::selection {
+    background-color: gold;
+    color: white;
+}
+
+/* importing font */
 
 @font-face {
     font-family: Outfit;
@@ -14,20 +23,24 @@
     src: url(../Roboto-Medium.ttf);
 }
 
-
 .container {
-    position: relative;
+    position: absolute;
+    display: flex;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100vw;
     height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 .wrapper {
-    margin-left: 12%;
     width: 1200px;
     height: 100vh;
+    margin: 0 auto;
 }
+
+/* Header style */
 
 .header {
     margin-top: 10%;
@@ -37,6 +50,7 @@
 
 .header img {
     width: 40%;
+    z-index: 2;
 }
 
 .heading {
@@ -51,6 +65,7 @@
     width: 65%;
     line-height: 80px;
     color: white;
+    z-index: 2;
 }
 
 .heading p {
@@ -59,7 +74,10 @@
     font-size: 18px;
     line-height: 25px;
     width: 55%;
+    z-index: 2;
 }
+
+/* input from user style */
 
 .type {
     margin-top: 8%;
@@ -72,27 +90,27 @@
     left: 40%;
     padding-bottom: 15px;
     display: flex;
+    z-index: 2;
 }
 
-.inputs .input {
-    border-radius: 25px;
-    border: 1px solid white;
-    height: 35px;
-    width: 600px;
-}
-
+.inputs .input,
 .inputs select {
-    border-radius: 25px;
+    border-radius: 20px;
     border: 1px solid white;
     height: 35px;
     width: 600px;
+    z-index: 2;
+    left: 20px;
+    padding-left: 10px;
 }
 
 .inputs .label {
     font-family: Outfit;
     font-size: 25px;
-
+    z-index: 2;
 }
+
+/* buttons style */
 
 .buttons {
     margin-top: 5%;
@@ -112,6 +130,8 @@
     font-size: 16px;
     word-spacing: 10%;
     font-family: Outfit;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .buttons a {
@@ -120,19 +140,22 @@
     font-style: Outfit;
     color: black;
     font-weight: bold;
+    z-index: 2;
 }
 
+/* footer style */
+
 .foot_content {
-    position: absolute;
-    top: 1200px;
-    z-index: 2;
-    padding: 30px 0 30px 0;
+    padding: 30px 0 50px 0;
     overflow-x: hidden;
     display: flex;
     background-color: white;
     justify-content: space-evenly;
-    width: 100vw;
-    height: 200px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 1150px;
+    border: none;
 }
 
 .Rights {
@@ -187,6 +210,11 @@
     width: 30px;
 }
 
+.foot_content a:hover {
+    color: #F4BB44;
+    transition: color 0.3s linear;
+}
+
 .foot_content h2 {
     font-weight: bold;
     font-size: 16px;
@@ -212,6 +240,188 @@
     text-decoration: underline;
 }
 
+.success {
+    background-color: #4caf50;
+}
+
+.error {
+    background-color: #f44336;
+}
+
+.message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
+
 h1 {
     font-size: 200px;
+}
+
+#Register:hover {
+    scale: 1.15;
+    background-color: #b3dff7;
+}
+
+#anchor:hover {
+    scale: 1.1;
+}
+
+/* toast style */
+.message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 5;
+}
+
+.success {
+    background-color: #4caf50;
+}
+
+.success:hover {
+    background-color: #318534;
+}
+
+.error {
+    background-color: #f44336;
+}
+
+.error:hover {
+    background-color: #882d27;
+}
+
+.info {
+    background-color: #0074cc;
+}
+
+.info:hover {
+    background-color: #005baa;
+}
+
+/* media query for ipad air */
+
+@media (min-width: 769px) and (max-width:1260px) {
+    .wrapper {
+        margin-left: 8%;
+        width: 80%;
+    }
+
+    .header {
+        margin-top: 5%;
+        justify-content: center;
+
+    }
+
+    .header img {
+        width: 60%;
+        height: 40%;
+    }
+
+    .heading h1 {
+        font-size: 40px;
+        width: 75%;
+        line-height: 60px;
+    }
+
+    .heading p {
+        font-size: 16px;
+        width: 65%;
+        line-height: 22px;
+    }
+
+    .type {
+        right: 140px;
+    }
+
+    .inputs .input,
+    .inputs select {
+        width: 50%;
+    }
+
+    .buttons {
+        margin-top: 3%;
+    }
+
+    .buttons button {
+        margin-right: 25px;
+    }
+
+    .foot_content {
+        margin-top: 5%;
+    }
+
+}
+
+/* Media query for iPhone 12 Pro */
+@media (max-width: 768px) {
+
+    .wrapper {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .header {
+        margin-top: 3%;
+        justify-content: center;
+        margin-left: 20%;
+    }
+
+    .header img {
+        opacity: 0;
+    }
+
+
+    .heading h1 {
+        font-size: 10px;
+        width: 100%;
+        line-height: 50px;
+        left: 100px;
+        text-align: left;
+        text-wrap: stable;
+        word-spacing: 20px;
+        margin-top: 30px;
+    }
+
+    .heading p {
+        font-size: 7px;
+        width: 75%;
+        line-height: 20px;
+    }
+
+    .type {
+        right: 140px;
+    }
+
+    .inputs .input,
+    .inputs select {
+        width: 40%;
+    }
+
+    .buttons {
+        margin-top: 2%;
+    }
+
+    .buttons button {
+        margin-right: 20px;
+    }
+
+    .foot_content {
+        margin-top: 5%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
 }
