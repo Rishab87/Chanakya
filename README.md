@@ -1,5 +1,7 @@
 # Project Chanakya
 
+**Access the Deployed Version of the Project: [Chanakya Learning](https://chanakyalearning.netlify.app/)**
+
 ## Home Page
 
 ![Screenshot 1](Images/home1.jpg)
